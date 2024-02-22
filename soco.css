@@ -253,7 +253,6 @@ body{
 }
 
 .student{
-    display: flex;
     position: absolute;
     right: 350px;
     top: 200px;
@@ -362,7 +361,6 @@ body{
     display: none;
 }
 .instructor{
-    display: flex;
     position: absolute;
     right: 350px;
     top: 200px;
@@ -478,4 +476,49 @@ keyframes fadeInFromTop {
     border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius:0;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust container padding */
+    }
+
+    .container-2 {
+        width: 100%; /* Occupy full width */
+        position: static; /* Remove absolute positioning */
+        background: none; /* Remove background color */
+        padding: 0; /* Remove padding */
+    }
+
+    .container-2 ul li {
+        width: auto; /* Let li elements occupy auto width */
+        padding: 10px; /* Adjust padding */
+        margin-left: 0; /* Remove left margin */
+        border-right: none; /* Remove right border */
+    }
+
+    .container-2 ul li .vista {
+        position: static; /* Remove absolute positioning */
+        background-color: transparent; /* Make background transparent */
+        box-shadow: none; /* Remove box shadow */
+        color: initial; /* Reset text color */
+        animation: none; /* Remove animation */
+    }
+
+    .container-3 {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .container-3 h1 {
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .search input,
+    .search i {
+        top: 180px; /* Adjust top position */
+        right: 10px; /* Adjust right position */
+        width: 80%; /* Adjust width */
+    }
+
+    /* Add more adjustments for other elements as needed */
 }
