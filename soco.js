@@ -47,9 +47,6 @@
             event.stopPropagation();
         });
 
-        document.addEventListener("click", function() {
-            studentDiv.style.display = "none";
-            instructorDiv.style.display = "none";
-        });
+        
     });
     
